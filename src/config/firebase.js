@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGE_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyAPySx4KPxanY_cqvlz7rXqcF-dVqXK-cQ",
+  authDomain: "nn-lms.firebaseapp.com",
+  projectId: "nn-lms",
+  storageBucket: "nn-lms.appspot.com",
+  messagingSenderId: "57212172692",
+  appId: "1:57212172692:web:3c6b188ccb9ba44823b781",
+  measurementId: "G-1VTXY8RX2L"
 };
 
 const app = initializeApp(firebaseConfig);
