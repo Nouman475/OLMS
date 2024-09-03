@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
+/* Course card styling */
+#course-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Center content */
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#course-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+}
+#main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Progress bar wrapper */
+#progress-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+}
+
+#progress-heading {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px; /* Space between heading and progress bar */
+}
+
+.ant-progress {
+  max-width: 500px; /* Control the width of the progress bar */
+  margin-top: 10px; /* Space between heading and progress bar */
+}
+
+/* Assessments styling */
+#assessments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.assessment-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-size: 18px;
+  color: #333;
+  border-left: 5px solid #ff7e5f;
+  transition: all 0.2s ease;
+}
+
+.assessment-card:hover{
+  transform: translateY(-10px);
+}
+.assessment-card button {
+  background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+.certificate-container {
+  border: 10px solid transparent;
+  padding: 20px;
+  background: white; /* Set background to white */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-image: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+  border-image-slice: 1;
+}
+
+.certificate-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Baskervville SC", serif;
+  background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.student-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.course-name {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+.certificate-body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.signature {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.signature-img {
+  position: absolute;
+  right: 8%;
+  bottom: 20px;
+  width: 150px;
+  height: auto;
+}
+
+.signature-text {
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  color: #333;
+  margin-top: 10px;
+}
+
+#cong {
+  color: #333;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .certificate-title {
+    font-size: 2rem;
+  }
+  
+  .student-name {
+    font-size: 1.75rem;
+  }
+  
+  .course-name {
+    font-size: 1.5rem;
+  }
+  
+  .certificate-body {
+    font-size: 1rem;
+  }
+  
+  .signature-img {
+    width: 100px; /* Reduce size for smaller screens */
+    right: 5%; /* Adjust position */
+    bottom: 10px;
+  }
+  
+  .signature-text {
+    font-size: 0.875rem;
+    right: 7%;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-title {
+    font-size: 1.75rem;
+  }
+  
+  .student-name {
+    font-size: 1.5rem;
+  }
+  
+  .course-name {
+    font-size: 1.25rem;
+  }
+  
+  .certificate-body {
+    font-size: 0.875rem;
+  }
+  
+  .signature-img {
+    width: 80px; /* Further reduce size */
+    right: 3%;
+  }
+  
+  .signature-text {
+    font-size: 0.75rem;
+    right: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .certificate-container {
+    padding: 10px;
+  }
+  
+  .signature-img {
+    display: none; /* Hide the signature image on very small screens */
+    visibility: hidden;
+  }
+  
+  .signature-text {
+    display: none; /* Hide the signature text on very small screens */
+  }
+}

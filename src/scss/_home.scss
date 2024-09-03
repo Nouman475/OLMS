@@ -1,0 +1,97 @@
+.main-content {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero .btn {
+  font-weight: bold;
+}
+
+/* Features, Services, and Advantages Section */
+.features h2,
+.services h2,
+.advantages h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.features .col-md-4,
+.services .col-md-4,
+.advantages .col-md-3 {
+  margin-bottom: 30px;
+}
+
+/* Hero Image 3D Hover Effect */
+.hero img {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.hero img:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+}
+
+.features img,
+.services img,
+.advantages img {
+  max-height: 100px;
+  margin-bottom: 20px;
+}
+
+.features h3,
+.services h3,
+.advantages h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.features p,
+.services p,
+.advantages p {
+  font-size: 16px;
+  color: #555;
+}
+
+.services {
+  background-color: #f8f9fa;
+}
+
+
+.ant-menu {
+  border-radius: 15px !important;
+}
+
+.ant-layout-sider-trigger,.ant-menu-item-selected{
+  background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .features img,
+  .services img,
+  .advantages img {
+    max-height: 80px;
+  }
+
+  .features h3,
+  .services h3,
+  .advantages h4 {
+    font-size: 20px;
+  }
+}

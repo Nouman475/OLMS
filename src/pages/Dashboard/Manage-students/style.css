@@ -1,0 +1,76 @@
+.manage-student {
+    padding: 20px;
+    background: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-input {
+    width: 300px;
+  }
+  
+  .ant-table {
+    background: #fff;
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #fafafa;
+    font-weight: bold;
+  }
+  
+  .ant-table-tbody > tr > td {
+    padding: 12px 16px;
+  }
+  
+  .ant-modal {
+    border-radius: 8px;
+  }
+  
+  .ant-modal-title {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .ant-form-item-label > label {
+    font-weight: bold;
+  }
+  
+  .ant-input,
+  .ant-select-selector {
+    border-radius: 4px;
+  }
+  
+  .ant-btn {
+    border-radius: 4px;
+  }
+  /* Badge styling */
+.new-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, #b46461e9, #719dcfe8);
+  color: #fffefe; /* White text */
+  border-radius: 40%;
+  padding: 2px;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+/* Ensure the card has relative positioning */
+.card-container {
+  position: relative;
+  padding: 10px; /* Adjust padding if needed */
+}

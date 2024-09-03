@@ -1,0 +1,204 @@
+/* General Layout Enhancements */
+.layout-header {
+    background-color: #001529;
+    padding: 0 20px;
+}
+
+.container-custom {
+    padding: 40px 20px;
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-search {
+    width: 100%;
+    max-width: 300px;
+}
+
+.navbar-category {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-toggle {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 300px; /* Fixed height for consistency */
+    transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h4 {
+    color: #001529;
+    font-weight: bold;
+}
+
+.course-card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.course-section-title {
+    color: #001529;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffaa18;
+    padding-bottom: 10px;
+}
+
+.btn-info{
+    background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+}
+#s-btn{
+    background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+    padding: 10px !important;
+}
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .navbar-custom {
+        margin: .3rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.course-card-image {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    height: 100%; /* Ensure the image container covers the full height */
+}
+
+.course-card-image img {
+    width: 100%;
+    height: 100%; /* Make sure the image fills the height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); /* Diagonal cut */
+}
+
+.course-card-content {
+    padding: 20px;
+    width: 60%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.course-card-content h4 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.payment-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .payment-radio-input {
+    display: flex;
+    align-items: center;
+  }
+  .input-content{
+    display: flex;
+    
+  }
+  .payment-radio-image {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 8px;
+  }
+  
+
+.course-card-content p {
+    margin: 5px 0;
+}
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+    padding: 50px;
+    height: 50vh; /* Adjust the height as needed */
+    color: #fff;
+    position: relative;
+  }
+  
+  #hero-content {
+    max-width: 50%;
+  }
+  
+  #hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+
+  #hero-image img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 80%;
+    z-index: 1; /* Ensures the image doesn't overlap text */
+  }
+  
+  @media (max-width: 768px) {
+    #hero-section {
+        margin-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+  
+    #hero-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #hero-image img {
+      position: static;
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,91 @@
+.header {
+  background-color: #fff; /* White background for a clean look */
+  color: #333; /* Dark gray for text */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd; /* Light gray border for subtle separation */
+  z-index: 9;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333; /* Matching text color with the theme */
+  text-transform: uppercase;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Baskervville SC", serif;
+  background: linear-gradient(to right, rgb(255, 126, 95) 0%, rgb(254, 180, 123) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav a {
+  color: #333; /* Dark gray for links */
+  margin: 0 15px;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600; /* Slightly less bold for a modern look */
+  transition: all 0.2s ease;
+}
+
+.header .nav a:hover {
+  color: #007bff; /* Subtle blue hover effect */
+  background-color: #f1f1f1; /* Light gray background on hover */
+  border-radius: 4px; /* Softer rounded edges */
+}
+
+.header .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header .menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* Match the toggle color with the text */
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .header .nav a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .header .menu-toggle {
+    display: flex;
+  }
+
+  .header .nav.active {
+    display: flex;
+  }
+}

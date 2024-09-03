@@ -1,0 +1,20 @@
+/* styles.css */
+.track-progress-chart {
+    padding: 15px; /* Increased padding for better spacing */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Set a default height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Smaller height for extra small screens */
+  @media (max-width: 576px) {
+    .track-progress-chart {
+      height: 250px; /* Reduced height for smaller screens */
+    }
+  }
+  
